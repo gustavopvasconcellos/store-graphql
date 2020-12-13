@@ -14,12 +14,33 @@ type Order {
   timeZoneLastChange: String
   invoicedDate: String
   isCompleted: Boolean
+  packageAttachment: PackageAttachment
   items: [OrderItem]
   sellers: [OrderItemSeller]
   totals: [OrderItemTotal]
   paymentData: OrderItemPaymentData
   shippingData: OrderItemShippingData
   storePreferencesData: StorePreferencesData
+}
+
+type PackageAttachment {
+  packages: [Package]
+}
+
+type Package {
+  invoiceNumber: String
+  invoiceValue: Int
+  invoiceUrl: String
+  issuanceDate: String
+  trackingUrl: String
+  type: String
+  courierStatus: CourierStatus
+}
+
+type CourierStatus {
+  status: String
+  finished: Boolean
+  deliveredDate: String
 }
 
 type OrderItem {

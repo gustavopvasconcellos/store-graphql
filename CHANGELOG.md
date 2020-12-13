@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+### Added
+- New field packageAttachment to Order type
 ## [2.136.9] - 2020-12-10
 ### Added
 - `scope: public` to `document` and `documents`'s Master Data queries.
