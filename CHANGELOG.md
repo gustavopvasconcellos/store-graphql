@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## [2.136.9] - 2020-12-10
+### Added
+- `scope: public` to `document` and `documents`'s Master Data queries.
+
 ## [2.136.8] - 2020-12-08
 ### Added
 - `scope: public` to `getPublicSchema` query.
